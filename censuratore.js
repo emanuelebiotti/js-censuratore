@@ -8,13 +8,13 @@
 var testo = prompt('Inserisci del testo');
 
 // creo un array contenente le singole parole della stringa di testo, utilizzando il metodo split
-
 var paroleTesto = [];
 paroleTesto = testo.split(" ");
 console.log(paroleTesto);
 
-// // creo un array contenente le parole vietate
+// creo un array contenente le parole vietate
 var paroleVietate = ['in', 'un', 'di'];
+
 
 // devo ciclare due array: quello contenente le parole del testo e quello delle parole vietate.
 // nidifico un ciclo for dentro un altro ciclo for (???)
@@ -22,6 +22,7 @@ for (i=0; i<paroleTesto.length; i++) {
 
   for (j=0; j<paroleVietate.length; j++) {
     if (paroleTesto[i] === paroleVietate[j]) {
+
       // qui dentro devo fare in modo che le parole vietate vengano sostitituite con 'xxx'.
       //può essere questa (???)
       //paroleTesto.replace(paroleVietate[i], 'xxx');
@@ -30,4 +31,10 @@ for (i=0; i<paroleTesto.length; i++) {
     }
   }
 
+
 // oppure creo una funzione che sostituisce una parola con un'altra???
+// una cosa del tipo:
+// function sostituisci (parola1, parola2) {
+//   var nuovoTesto = paroleTesto.replace(parola1, parola2);
+//   return nuovoTesto;
+// }
