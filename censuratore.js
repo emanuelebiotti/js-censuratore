@@ -9,7 +9,8 @@ var testo = prompt('Inserisci del testo');
 
 // creo un array contenente le singole parole della stringa di testo, utilizzando il metodo split
 
-var paroleTesto = testo.split(" ");
+var paroleTesto = [];
+paroleTesto = testo.split(" ");
 console.log(paroleTesto);
 
 // // creo un array contenente le parole vietate
